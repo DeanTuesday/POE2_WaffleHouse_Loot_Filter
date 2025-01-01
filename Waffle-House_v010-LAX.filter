@@ -1,0 +1,1600 @@
+#----------------------------------------------------------------------------------------------
+# color key
+#----------------------------------------------------------------------------------------------
+# 0 0 0 255			- BLACK	    	- Basic Background Color
+# 255 255 255 255	- WHITE			- S Tier Background Color
+# 255 0 0 255  		- RED 			- Mirror tier
+# 240 90 35 255 	- DARK ORANGE 	- Divine Tier
+# 250 150 25 255 	- LIGHT ORANGE 	- Chaos Tier
+# 175 96 37 255 	- BROWN 		- Unique Tier
+# 190 180 135 255	- TAN 			- Basic Currency Tier
+# 95 0 135 255		- PURPLE		- Map Fragment
+# 90 255 30 255		- GREEN			- Quest Items
+# 100 100 100 255 	- GREY			- Background Color for Vendor Recipes
+# 50 255 255 255	- CYAN			- Gems
+# 0 75 250 255		- BLUE 			- Jewels
+
+#----------------------------------------------------------------------------------------------
+# alert sounds key
+#----------------------------------------------------------------------------------------------
+# 13 
+# 12 Quest Items
+# 10 
+# 8 
+# 6 Mirror tier
+# 5 Special Mapping Items
+# 4 Waystone / Mapping Items
+# 3 Tier 2 Uniques
+# 2 Chaos Orb tier
+# 1 Tier 1 Uniques
+
+#----------------------------------------------------------------------------------------------
+# other notes
+#----------------------------------------------------------------------------------------------
+# DisableDropSound true
+#
+# MiniMapIcon <size> <color> <shape>
+#       size minimum is 2, maximum is 0
+#       colors: Red, Green, Blue, Brown, White, Yellow, Cyan, Grey, Orange, Pink, Purple
+#       shape: Circle, Diamond, Hexagon, Square, Star, Triangle, Cross, Moon, Raindrop, Kite, Pentagon, UpsideDownHouse
+
+#----------------------------------------------------------------------------------------------
+# Override Area - add crafting bases or build specific things here
+#----------------------------------------------------------------------------------------------
+
+# Quest Items
+Show
+	Class == "Quest Items"
+	#BaseType == Quest
+	SetFontSize 45
+	SetTextColor 90 255 30 255
+	SetBorderColor 90 255 30 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 12 300
+	PlayEffect Green
+	MinimapIcon 0 Green Hexagon
+	DisableDropSound true
+
+
+#----------------------------------------------------------------------------------------------
+# Gold Tiered
+#----------------------------------------------------------------------------------------------
+
+Show
+	StackSize >= 1000
+	BaseType == "Gold"
+	SetFontSize 45
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 2 Yellow Circle
+	DisableDropSound true
+
+Show
+	StackSize >= 500
+	BaseType == "Gold"
+	SetFontSize 40
+	PlayEffect White
+	MinimapIcon 2 Grey Circle
+	DisableDropSound true
+
+Show
+	StackSize >= 150
+	BaseType == "Gold"
+	SetFontSize 40
+	PlayEffect Grey
+	DisableDropSound true
+
+Show
+	BaseType == "Gold"
+	SetFontSize 35
+
+#----------------------------------------------------------------------------------------------
+# Basic Currency Items
+#----------------------------------------------------------------------------------------------
+
+# S-Tier Basic Currency
+Show
+	Class == "Stackable Currency"
+	BaseType == "Mirror of Kalandra" "Perfect Jeweller's Orb"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+	DisableDropSound true
+
+# A-Tier Basic Currency 
+Show
+	Class == "Stackable Currency"
+	BaseType == "Divine Orb" "Greater Jeweller's Orb"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35 255
+	PlayAlertSound 1 300
+	PlayEffect Red
+	MinimapIcon 0 Red Circle
+	DisableDropSound true
+
+# B-Tier Basic Currency
+Show
+	Class == "Stackable Currency"
+	BaseType == "Exalted Orb" "Chaos Orb" "Orb of Alchemy" "Orb of Chance" "Orb of Annulment" "Glassblower's Bauble" "Gemcutter's Prism"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 250 150 25 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Circle
+	DisableDropSound true
+
+# C-Tier Basic Currency
+Show
+	Class == "Stackable Currency"
+	BaseType == "Regal Orb" "Vaal Orb" "Artificer's Orb" "Lesser Jeweller's Orb" "Armourer's Scrap" "Blacksmith's Whetstone" "Arcanist's Etcher"
+	SetFontSize 38
+	SetTextColor 190 180 135 255
+	SetBorderColor 190 180 135 255
+	SetBackgroundColor 20 20 0 255
+	PlayAlertSound 2 200
+	PlayEffect Grey
+	MinimapIcon 2 Grey Circle
+	DisableDropSound true
+
+# D-Tier Basic Currency
+Show
+	Class == "Stackable Currency"
+	BaseType == "Scroll of Wisdom" "Orb of Transmutation" "Orb of Augmentation" "Transmutation Shard" "Regal Shard" "Artificer's Shard" "Chance Shard"
+	SetFontSize 34
+	SetTextColor 190 180 135 255
+	SetBorderColor 190 180 135 255
+	SetBackgroundColor 20 20 0 255
+	DisableDropSound true
+
+# S-Tier Soul Cores
+Show
+	Class == "Soul Core"
+	BaseType == "Soul Core of Azcapa"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+	DisableDropSound true
+
+# A-Tier Soul Cores
+Show
+	Class == "Soul Core"
+	BaseType == "Soul Core of Tacati" "Soul Core of Zalatl" "Soul Core of Citaqualotl" "Soul Core of Azcapa"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35 255
+	PlayAlertSound 1 300
+	PlayEffect Red
+	MinimapIcon 0 Red Circle
+	DisableDropSound true
+
+# B-Tier Soul Cores
+Show
+	Class == "Soul Core"
+	BaseType == "Soul Core of Topotante" "Soul Core of Opiloti" "Soul Core of Jiquani" "Soul Core of Puhuarte" "Soul Core of Tzamoto" "Soul Core of Xopec" "Soul Core of Quipolatl" "Soul Core of Ticaba" "Soul Core of Atmohua" "Soul Core of Cholotl" "Soul Core of Zantipi"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 250 150 25 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Circle
+	DisableDropSound true
+
+# C-Tier Soul Cores
+Show
+	Class == "Soul Core"
+	BaseType == "Desert Rune" "Glacial Rune" "Storm Rune" "Iron Rune" "Body Rune" "Mind Rune" "Vision Rune" "Rebirth Rune" "Inspiration Rune" "Stone Rune" 
+	SetFontSize 38
+	SetTextColor 190 180 135 255
+	SetBorderColor 190 180 135 255
+	SetBackgroundColor 20 20 0 255
+	PlayAlertSound 2 200
+	PlayEffect Grey
+	MinimapIcon 2 Grey Circle
+	DisableDropSound true
+
+#----------------------------------------------------------------------------------------------
+# League Currency Items
+#----------------------------------------------------------------------------------------------
+
+# A-Tier Essence
+Show
+	Class == "Stackable Currency"
+	BaseType == "Greater Essence of the Body" "Greater Essence of the Mind" "Greater Essence of Enhancement" "Greater Essence of Torment" "Greater Essence of Flames" "Greater Essence of Ice" "Greater Essence of Electricity" "Greater Essence of Ruin" "Greater Essence of Sorcery" "Greater Essence of Haste"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35 255
+	PlayAlertSound 1 300
+	PlayEffect Red
+	MinimapIcon 0 Red Circle
+	DisableDropSound true
+
+# B-Tier Essence
+Show
+	Class == "Stackable Currency"
+	BaseType == "Essence of Torment" "Essence of Ruin" "Essence of Haste" "Greater Essence of the Infinite" "Greater Essence of Battle"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 250 150 25 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Circle
+	DisableDropSound true
+
+# C-Tier Essence
+Show
+	Class == "Stackable Currency"
+	BaseType == "Essence of the Body" "Essence of the Mind" "Essence of Enhancement" "Essence of Torment" "Essence of Flames" "Essence of Ice" "Essence of Electricity" "Essence of Ruin" "Essence of Battle" "Essence of Sorcery" "Essence of Haste" "Essence of the Infinite"
+	SetFontSize 38
+	SetTextColor 190 180 135 255
+	SetBorderColor 190 180 135 255
+	SetBackgroundColor 20 20 0 255
+	PlayAlertSound 2 200
+	PlayEffect Grey
+	MinimapIcon 2 Grey Circle
+	DisableDropSound true
+
+# B-Tier Breach Catalyst
+Show
+	Class == "Stackable Currency"
+	BaseType == "Neural Catalyst" "Chayula's Catalyst"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 250 150 25 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Circle
+	DisableDropSound true
+
+# C-Tier Breach Catalyst
+Show
+	Class == "Stackable Currency"
+	BaseType == "Flesh Catalyst" "Carapace Catalyst" "Adaptive Catalyst" "Xoph's Catalyst" "Tul's Catalyst" "Esh's Catalyst" "Uul-Netol's Catalyst" "Reaver Catalyst" "Sibilant Catalyst" "Skittering Catalyst"
+	SetFontSize 38
+	SetTextColor 190 180 135 255
+	SetBorderColor 190 180 135 255
+	SetBackgroundColor 20 20 0 255
+	PlayAlertSound 2 200
+	PlayEffect Grey
+	MinimapIcon 2 Grey Circle
+	DisableDropSound true
+
+# S-Tier Delirium Distillations
+Show
+	Class == "Stackable Currency"
+	BaseType == "Distilled Isolation"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+	DisableDropSound true
+
+# A-Tier Delirium Distillations
+Show
+	Class == "Stackable Currency"
+	BaseType == "Distilled Despair" "Distilled Fear" "Distilled Suffering" "Distilled Isolation"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35 255
+	PlayAlertSound 1 300
+	PlayEffect Red
+	MinimapIcon 0 Red Circle
+	DisableDropSound true
+
+# B-Tier Delirium Distillations
+Show
+	Class == "Stackable Currency"
+	BaseType == "Distilled Paranoia" "Distilled Envy" "Distilled Disgust"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 250 150 25 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Circle
+	DisableDropSound true
+
+# C-Tier Delirium Distillations
+Show
+	Class == "Stackable Currency"
+	BaseType == "Distilled Ire" "Distilled Guilt" "Distilled Greed"
+	SetFontSize 38
+	SetTextColor 190 180 135 255
+	SetBorderColor 190 180 135 255
+	SetBackgroundColor 20 20 0 255
+	PlayAlertSound 2 200
+	PlayEffect Grey
+	MinimapIcon 2 Grey Circle
+	DisableDropSound true
+
+# B-Tier Expedition
+Show
+	Class == "Stackable Currency"
+	BaseType == "Exotic Coinage"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 250 150 25 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Circle
+	DisableDropSound true
+
+# C-Tier Expedition
+Show
+	Class == "Stackable Currency"
+	BaseType == "Broken Circle Artifact" "Black Scythe Artifact" "Order Artifact" "Sun Artifact"
+	SetFontSize 38
+	SetTextColor 190 180 135 255
+	SetBorderColor 190 180 135 255
+	SetBackgroundColor 20 20 0 255
+	PlayAlertSound 2 200
+	PlayEffect Grey
+	MinimapIcon 2 Grey Circle
+	DisableDropSound true
+
+# S-Tier Omens
+Show
+	Class == "Omen"
+	BaseType == "Omen of Whittling" "Omen of Sinistral Erasure" "Omen of Dextral Erasure" "Omen of Sinistral Annulment" "Omen of Dextral Annulment"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+	DisableDropSound true
+
+# A-Tier Omens
+Show
+	Class == "Omen"
+	BaseType == "Omen of Corruption" "Omen of Amelioration" "Omen of Greater Annulment" 
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35 255
+	PlayAlertSound 1 300
+	PlayEffect Red
+	MinimapIcon 0 Red Circle
+	DisableDropSound true
+
+# B-Tier Omens
+Show
+	Class == "Omen"
+	BaseType == "Omen of Sinistral Alchemy" "Omen of Dextral Alchemy" "Omen of Sinistral Coronation" "Omen of Dextral Coronation" "Omen of Refreshment" "Omen of Resurgence" "Omen of Sinistral Exaltation" "Omen of Dextral Exaltation" "Omen of Greater Exaltation"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 250 150 25 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Circle
+	DisableDropSound true
+
+#----------------------------------------------------------------------------------------------
+# Uniques
+#----------------------------------------------------------------------------------------------
+
+# T1
+Show
+	Rarity Unique
+	BaseType == "Garment" "Knight Armour"
+	SetFontSize 45
+	SetTextColor 175 96 37 255
+	SetBorderColor 175 96 37 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+	DisableDropSound true
+
+# Rest
+Show
+	Rarity Unique
+	#BaseType == 
+	SetFontSize 45
+	SetTextColor 175 96 37 255
+	SetBorderColor 175 96 37 255
+	SetBackgroundColor 20 20 0 255
+	PlayAlertSound 3 300
+	PlayEffect Brown
+	MinimapIcon 2 Brown Circle
+	DisableDropSound true
+
+#----------------------------------------------------------------------------------------------
+# Map Items
+#----------------------------------------------------------------------------------------------
+
+# Pinnacle Bosses
+Show
+	Class == "Pinnacle Keys"
+	#BaseType ==
+	SetFontSize 45
+	SetTextColor 95 0 135 255
+	SetBorderColor 95 0 135 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Hexagon
+	DisableDropSound true
+
+# High Tier Map Fragment
+Show
+	Class == "Map Fragment"
+	BaseType == "An Audience with the King" "Simulacrum"
+	SetFontSize 45
+	SetTextColor 95 0 135 255
+	SetBorderColor 95 0 135 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Hexagon
+	DisableDropSound true
+
+# Breachstone is its own thing for some reason
+Show
+	Class == "Breachstone"
+	#BaseType ==
+	SetFontSize 45
+	SetTextColor 95 0 135 255
+	SetBorderColor 95 0 135 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Hexagon
+	DisableDropSound true
+
+# Other Map Fragment
+Show
+	Class == "Map Fragment"
+	#BaseType ==
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 95 0 135 255
+	PlayAlertSound 1 300
+	PlayEffect Purple
+	MinimapIcon 0 Purple Hexagon
+	DisableDropSound true
+
+# Splinters
+Show
+	Class == "Stackable Currency"
+	BaseType == "Breach Splinter" "Simulacrum Splinter"
+	SetFontSize 45
+	SetTextColor 95 0 135 255
+	SetBorderColor 95 0 135 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 2 300
+	PlayEffect Purple
+	MinimapIcon 2 Purple Circle
+	DisableDropSound true
+
+# Waystones T11 - T16
+Show
+	WaystoneTier >= 11
+	Class == "Waystones"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 4 300
+	PlayEffect Red
+	MinimapIcon 1 Red Square
+	DisableDropSound true
+
+# Waystones T6 - T10
+Show
+	WaystoneTier >= 6
+	Class == "Waystones"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 4 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Square
+	DisableDropSound true
+
+# Waystones T1 - T5
+Show
+	WaystoneTier >= 1
+	Class == "Waystones"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 4 300
+	PlayEffect White
+	MinimapIcon 1 White Square
+	DisableDropSound true
+
+# Tablets
+Show
+	Class == "Tablet"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 4 300
+	PlayEffect White
+	MinimapIcon 1 White Square
+	DisableDropSound true
+
+# Logbooks
+Show
+	Class == "Expedition Logbook"
+	SetFontSize 40
+	PlayAlertSound 4 300
+	PlayEffect White
+	MinimapIcon 2 White Square
+	DisableDropSound true
+
+# Relics
+Show
+	Class == "Relics"
+	SetFontSize 40
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Cross
+	DisableDropSound true
+
+# Misc Map Items (trial coins, inscribed ultimatums)
+Show
+	BaseType = "Barya" "Ultimatum"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 4 300
+	PlayEffect White
+	MinimapIcon 1 White Square
+	DisableDropSound true
+
+#----------------------------------------------------------------------------------------------
+# Gems
+#----------------------------------------------------------------------------------------------
+Show
+	BaseType "Uncut Skill Gem"
+	ItemLevel = 20
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 50 255 255 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Triangle
+	DisableDropSound true
+
+Show
+	BaseType "Uncut Skill Gem"
+	SetFontSize 35
+	SetTextColor 50 255 255 255
+	SetBorderColor 50 255 255 255
+	SetBackgroundColor 0 0 0 255
+	PlayEffect White
+
+Show
+	BaseType "Uncut Spirit Gem"
+	ItemLevel = 20
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 50 255 255 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Triangle
+	DisableDropSound true
+
+Show
+	BaseType "Uncut Spirit Gem"
+	SetFontSize 35
+	SetTextColor 50 255 255 255
+	SetBorderColor 50 255 255 255
+	SetBackgroundColor 0 0 0 255
+	PlayEffect White
+
+Show
+	BaseType "Uncut Support Gem"
+	SetFontSize 35
+	SetTextColor 50 255 255 255
+	SetBorderColor 50 255 255 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	DisableDropSound true
+
+Show
+	Class "Gems"
+	SetFontSize 45
+	SetTextColor 50 255 255 255
+	SetBorderColor 50 255 255 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 1 Yellow Triangle
+	DisableDropSound true
+
+#----------------------------------------------------------------------------------------------
+# PERSONALIZED LOOT FILTER OVERRIDES
+#----------------------------------------------------------------------------------------------
+# CHANCE BASE OVERRIDE
+Show
+	Mirrored False
+	Corrupted False
+	Rarity Normal
+	BaseType == "Heavy Belt" "Stellar Amulet"
+	SetFontSize 40
+	SetBorderColor 175 96 37 255
+	SetBackgroundColor 0 0 0 255
+
+# WEAPON & ARMOUR BASE ITEM OVERRIDE
+#Show
+#	Mirrored False
+#	Corrupted False
+#	Rarity Normal Magic
+#	BaseType == "Rattling Sceptre" "Stoic Sceptre" "Omen Sceptre" "Expert Heavy Crown"
+#	SetFontSize 40
+#	SetBackgroundColor 100 100 100 255
+
+#----------------------------------------------------------------------------------------------
+# Salvage Items  - COMMENT OUT THIS WHOLE SECTION IF YOU ARENT PLANNING TO SALVAGE
+#----------------------------------------------------------------------------------------------
+
+# Artificer Scraps
+Show
+	Sockets > 1
+	Rarity Normal Magic Rare
+	SetFontSize 40
+	#SetBorderColor 255 255 255 255
+	SetBackgroundColor 100 100 100 255
+
+Show
+	Sockets > 0
+	Height <= 2
+	Width <= 2
+	Rarity Normal Magic Rare
+	SetFontSize 40
+	#SetBorderColor 255 255 255 255
+	SetBackgroundColor 100 100 100 255
+
+Show
+	Sockets > 0
+	Width <= 1
+	Rarity Normal Magic Rare
+	SetFontSize 40
+	#SetBorderColor 255 255 255 255
+	SetBackgroundColor 100 100 100 255
+
+# Armourer Scraps, Blacksmith Whetstone and Arcanist's Etcher Salvage Items
+Show
+	Quality > 10
+	#Height <= 2
+	#Width <= 2
+	Rarity Normal Magic Rare
+	SetFontSize 40
+	SetBackgroundColor 100 100 100 255
+
+#Show
+#	Quality > 10
+#	Width <= 1
+#	Rarity Normal Magic Rare
+#	SetFontSize 40
+#	SetBackgroundColor 100 100 100 255
+
+
+#----------------------------------------------------------------------------------------------
+# Tiered Weapon Bases
+#----------------------------------------------------------------------------------------------
+
+# Claw
+#---------------------------------------------
+# not in game
+
+# Dagger
+#---------------------------------------------
+# not in game
+
+# Wand  (Right now there is really no difference in wands, just choose the one with the base skill you want and hide the rest)
+#---------------------------------------------
+Show
+	Mirrored False
+	Corrupted False
+	Rarity Rare
+	Class == "Wands"
+	BaseType == "Withered Wand" "Bone Wand" "Attuned Wand" "Siphoning Wand" "Volatile Wand" "Galvanic Wand" "Acrid Wand" "Offering Wand" "Frigid Wand" "Torture Wand" "Critical Wand" "Primordial Wand" "Dueling Wand"
+	SetFontSize 40
+
+Hide
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic
+	Class == "Wands"
+	BaseType == "Withered Wand" "Bone Wand" "Attuned Wand" "Siphoning Wand" "Volatile Wand" "Galvanic Wand" "Acrid Wand" "Offering Wand" "Frigid Wand" "Torture Wand" "Critical Wand" "Primordial Wand" "Dueling Wand"
+
+
+# One Hand Sword
+#---------------------------------------------
+# not in game
+
+# One Hand Axe
+#---------------------------------------------
+# not in game
+
+# One Hand Mace
+#---------------------------------------------
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 4
+	Rarity Normal Magic Rare
+	Class == "One Hand Maces"
+	BaseType == "Wooden Club"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 22
+	Rarity Normal Magic Rare
+	Class == "One Hand Maces"
+	BaseType == "Smithing Hammer" "Spiked Club" "Slim Mace"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 45
+	Rarity Normal Magic Rare
+	Class == "One Hand Maces"
+	BaseType == "Warpick" "Plated Mace" "Brigand Mace" "Construct Hammer"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 55
+	Rarity Normal Magic Rare
+	Class == "One Hand Maces"
+	BaseType == "Morning Star" "Jade Club" "Lumen Mace" "Advanced Smithing Hammer" "Advanced Slim Mace"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 67
+	Rarity Normal Magic Rare
+	Class == "One Hand Maces"
+	BaseType == "Execratus Hammer" "Torment Club" "Advanced Warpick" "Advanced Plated Mace" "Advanced Brigand Mace" "Advanced Construct Hammer"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 67
+	Rarity Normal Magic Rare
+	Class == "One Hand Maces"
+	BaseType == "Expert Slim Mace" "Expert Plated Mace" "Expert Smithing Hammer" "Expert Warpick" "Expert Construct Hammer" "Expert Brigand Mace"
+	SetFontSize 40
+
+Hide
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic
+	Class == "One Hand Maces"
+	BaseType == "Expert Slim Mace" "Expert Plated Mace" "Expert Smithing Hammer" "Expert Warpick" "Expert Construct Hammer" "Expert Brigand Mace" "Execratus Hammer" "Torment Club" "Advanced Warpick" "Advanced Plated Mace" "Advanced Brigand Mace" "Advanced Construct Hammer" "Morning Star" "Jade Club" "Lumen Mace" "Advanced Smithing Hammer" "Advanced Slim Mace" "Warpick" "Plated Mace" "Brigand Mace" "Construct Hammer" "Smithing Hammer" "Spiked Club" "Slim Mace" "Wooden Club"
+
+# Sceptre
+#---------------------------------------------
+Show
+	Mirrored False
+	Corrupted False
+	Rarity Magic Rare
+	Class == "Sceptres"
+	BaseType == "Rattling Sceptre" "Stoic Sceptre" "Omen Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Shrine Sceptre" "Devouring Sceptre" "Clasped Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
+	SetFontSize 40
+
+Hide
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic
+	Class == "Sceptres"
+	BaseType == "Rattling Sceptre" "Stoic Sceptre" "Omen Sceptre" "Lupine Sceptre" "Ochre Sceptre" "Shrine Sceptre" "Devouring Sceptre" "Clasped Sceptre" "Devotional Sceptre" "Wrath Sceptre" "Aromatic Sceptre" "Pious Sceptre" "Hallowed Sceptre"
+
+# Spear
+#---------------------------------------------
+# not in game
+
+# Flail
+#---------------------------------------------
+# not in game
+
+# Bows
+#---------------------------------------------
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 4
+	Rarity Normal Magic Rare
+	Class == "Bows"
+	BaseType == "Crude Bow"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 22
+	Rarity Normal Magic Rare
+	Class == "Bows"
+	BaseType == "Shortbow" "Warden Bow" "Recurve Bow"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 39
+	Rarity Normal Magic Rare
+	Class == "Bows"
+	BaseType == "Composite Bow" "Dualstring Bow" "Cultist Bow"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 50
+	Rarity Normal Magic Rare
+	Class == "Bows"
+	BaseType == "Zealot Bow" "Artillery Bow"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 67
+	Rarity Normal Magic Rare
+	Class == "Bows"
+	BaseType == "Tribal Bow" "Greatbow" "Advanced Shortbow" "Double Limb Bow" "Advanced Composite Bow" "Advanced Warden Bow" "Advanced Dualstring Bow" "Advanced Cultist Bow" "Advanced Zealot Bow" "Heavy Bow"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 67
+	Rarity Normal Magic Rare
+	Class == "Bows"
+	BaseType == "Expert Shortbow" "Expert Composite Bow" "Expert Warden Bow" "Expert Dualstring Bow" "Expert Cultist Bow" "Expert Zealot Bow"
+	SetFontSize 40
+
+Hide
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic
+	Class == "Bows"
+	BaseType == "Expert Shortbow" "Expert Composite Bow" "Expert Warden Bow" "Expert Dualstring Bow" "Expert Cultist Bow" "Expert Zealot Bow" "Tribal Bow" "Greatbow" "Advanced Shortbow" "Double Limb Bow" "Advanced Composite Bow" "Advanced Warden Bow" "Advanced Dualstring Bow" "Advanced Cultist Bow" "Advanced Zealot Bow" "Heavy Bow" "Zealot Bow" "Artillery Bow" "Composite Bow" "Dualstring Bow" "Cultist Bow" "Shortbow" "Warden Bow" "Recurve Bow" "Crude Bow"
+
+
+# Staves
+#---------------------------------------------
+Show
+	Mirrored False
+	Corrupted False
+	Rarity Magic Rare
+	Class == "Staves"
+	BaseType == "Ashen Staff" "Gelid Staff" "Voltaic Staff" "Spriggan Staff" "Pyrophyte Staff" "Chiming Staff" "Rending Staff" "Reaping Staff" "Icicle Staff" "Roaring Staff" "Paralysing Staff" "Cleric Staff" "Dark Staff"
+	SetFontSize 40
+
+Hide
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic
+	Class == "Staves"
+	BaseType == "Ashen Staff" "Gelid Staff" "Voltaic Staff" "Spriggan Staff" "Pyrophyte Staff" "Chiming Staff" "Rending Staff" "Reaping Staff" "Icicle Staff" "Roaring Staff" "Paralysing Staff" "Cleric Staff" "Dark Staff"
+
+# Two Hand Sword
+#---------------------------------------------
+# not in game
+
+# Two Hand Axe
+#---------------------------------------------
+# not in game
+
+# Two Hand Mace
+#---------------------------------------------
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 4
+	Rarity Normal Magic Rare
+	Class == "Two Hand Maces"
+	BaseType == "Felled Greatclub"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 22
+	Rarity Normal Magic Rare
+	Class == "Two Hand Maces"
+	BaseType == "Oak Greathammer" "Forge Maul" "Studded Greatclub"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 45
+	Rarity Normal Magic Rare
+	Class == "Two Hand Maces"
+	BaseType == "Cultist Greathammer" "Temple Maul" "Leaden Greathammer" "Crumbling Maul"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 55
+	Rarity Normal Magic Rare
+	Class == "Two Hand Maces"
+	BaseType == "Pointed Maul" "Totemic Greatclub" "Greatmace" "Advanced Oak Greathammer" "Advanced Forge Maul"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 67
+	Rarity Normal Magic Rare
+	Class == "Two Hand Maces"
+	BaseType == "Precise Greathammer" "Advanced Cultist Greathammer" "Advanced Temple Maul" "Advanced Leaden Greathammer" "Advanced Crumbling Maul"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 77
+	Rarity Normal Magic Rare
+	Class == "Two Hand Maces"
+	BaseType == "Giant Maul" "Expert Forge Maul" "Expert Temple Maul"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 77
+	Rarity Normal Magic Rare
+	Class == "Two Hand Maces"
+	BaseType == "Expert Temple Maul" "Expert Oak Greathammer" "Expert Cultist Greathammer" "Expert Crumbling Maul" "Expert Leaden Greathammer"
+	SetFontSize 40
+
+Hide
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic
+	Class == "Two Hand Maces"
+	BaseType == "Expert Temple Maul" "Expert Oak Greathammer" "Expert Cultist Greathammer" "Expert Crumbling Maul" "Expert Leaden Greathammer" "Giant Maul" "Expert Forge Maul" "Precise Greathammer" "Advanced Cultist Greathammer" "Advanced Temple Maul" "Advanced Leaden Greathammer" "Advanced Crumbling Maul" "Pointed Maul" "Totemic Greatclub" "Greatmace" "Advanced Oak Greathammer" "Advanced Forge Maul" "Cultist Greathammer" "Temple Maul" "Leaden Greathammer" "Crumbling Maul" "Oak Greathammer" "Forge Maul" "Studded Greatclub" "Felled Greatclub"
+
+# Quarterstaff
+#---------------------------------------------
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 4
+	Rarity Normal Magic Rare
+	Class == "Quarterstaves"
+	BaseType == "Wrapped Quarterstaff"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 28
+	Rarity Normal Magic Rare
+	Class == "Quarterstaves"
+	BaseType == "Long Quarterstaff" "Gothic Quarterstaff" "Crackling Quarterstaff" "Crescent Quarterstaff"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 45
+	Rarity Normal Magic Rare
+	Class == "Quarterstaves"
+	BaseType == "Steelpoint Quarterstaff" "Slicing Quarterstaff" "Barrier Quarterstaff"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 56
+	Rarity Normal Magic Rare
+	Class == "Quarterstaves"
+	BaseType == "Hefty Quarterstaff" "Smooth Quarterstaff" "Anima Quarterstaff" "Advanced Long Quarterstaff" "Advanced Gothic Quarterstaff"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 67
+	Rarity Normal Magic Rare
+	Class == "Quarterstaves"
+	BaseType == "Advanced Crackling Quarterstaff" "Advanced Crescent Quarterstaff" "Advanced Slicing Quarterstaff" "Advanced Barrier Quarterstaff" "Graceful Quarterstaff"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 77
+	Rarity Normal Magic Rare
+	Class == "Quarterstaves"
+	BaseType == "Wyrm Quarterstaff" "Expert Gothic Quarterstaff" "Expert Crescent Quarterstaff"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 77
+	Rarity Normal Magic Rare
+	Class == "Quarterstaves"
+	BaseType == "Expert Crescent Quarterstaff" "Expert Long Quarterstaff" "Expert Crackling Quarterstaff" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff"
+	SetFontSize 40
+
+Hide
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic
+	Class == "Quarterstaves"
+	BaseType == "Expert Crescent Quarterstaff" "Expert Long Quarterstaff" "Expert Crackling Quarterstaff" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Wyrm Quarterstaff" "Expert Gothic Quarterstaff" "Advanced Crackling Quarterstaff" "Advanced Crescent Quarterstaff" "Advanced Slicing Quarterstaff" "Advanced Barrier Quarterstaff" "Graceful Quarterstaff" "Hefty Quarterstaff" "Smooth Quarterstaff" "Anima Quarterstaff" "Advanced Long Quarterstaff" "Advanced Gothic Quarterstaff" "Steelpoint Quarterstaff" "Slicing Quarterstaff" "Barrier Quarterstaff" "Long Quarterstaff" "Gothic Quarterstaff" "Crackling Quarterstaff" "Crescent Quarterstaff" "Wrapped Quarterstaff"
+
+# Crossbow
+#---------------------------------------------
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 4
+	Rarity Normal Magic Rare
+	Class == "Crossbows"
+	BaseType == "Makeshift Crossbow"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 26
+	Rarity Normal Magic Rare
+	Class == "Crossbows"
+	BaseType == "Tense Crossbow" "Sturdy Crossbow" "Varnished Crossbow" "Dyad Crossbow"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 45
+	Rarity Normal Magic Rare
+	Class == "Crossbows"
+	BaseType == "Alloy Crossbow" "Bombard Crossbow" "Construct Crossbow"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 56
+	Rarity Normal Magic Rare
+	Class == "Crossbows"
+	BaseType == "Blackfire Crossbow" "Piercing Crossbow" "Cumbrous Crossbow" "Advanced Tense Crossbow" "Advanced Sturdy Crossbow" "Advanced Varnished Crossbow"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 67
+	Rarity Normal Magic Rare
+	Class == "Crossbows"
+	BaseType == "Dedalian Crossbow" "Advanced Dyad Crossbow" "Advanced Bombard Crossbow" "Advanced Forlorn Crossbow"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 77
+	Rarity Normal Magic Rare
+	Class == "Crossbows"
+	BaseType == "Esoteric Crossbow" "Expert Sturdy Crossbow" "Expert Varnished Crossbow"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 77
+	Rarity Normal Magic Rare
+	Class == "Crossbows"
+	BaseType == "Expert Tense Crossbow" "Expert Dyad Crossbow" "Expert Bombard Crossbow" "Expert Forlorn Crossbow"
+	SetFontSize 40
+
+Hide
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic
+	Class == "Crossbows"
+	BaseType == "Expert Tense Crossbow" "Expert Dyad Crossbow" "Expert Bombard Crossbow" "Expert Forlorn Crossbow" "Esoteric Crossbow" "Expert Sturdy Crossbow" "Expert Varnished Crossbow" "Dedalian Crossbow" "Advanced Dyad Crossbow" "Advanced Bombard Crossbow" "Advanced Forlorn Crossbow" "Blackfire Crossbow" "Piercing Crossbow" "Cumbrous Crossbow" "Advanced Tense Crossbow" "Advanced Sturdy Crossbow" "Advanced Varnished Crossbow" "Alloy Crossbow" "Bombard Crossbow" "Construct Crossbow" "Tense Crossbow" "Sturdy Crossbow" "Varnished Crossbow" "Dyad Crossbow" "Makeshift Crossbow"
+
+# Trap
+#---------------------------------------------
+# not in game
+
+# Fishing Rods
+#---------------------------------------------
+# not in game
+
+# Quiver
+#---------------------------------------------
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 51
+	Rarity Normal Magic Rare
+	Class == "Quivers"
+	BaseType == "Broadhead Quiver" "Fire Quiver" "Sacral Quiver" "Two-Point Quiver" "Blunt Quiver"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic Rare
+	Class == "Quivers"
+	BaseType == "Toxic Quiver" "Serrated Quiver" "Primed Quiver" "Penetrating Quiver" "Volant Quiver" "Visceral Quiver"
+	SetFontSize 40
+
+Hide
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic
+	Class == "Quivers"
+	BaseType == "Toxic Quiver" "Serrated Quiver" "Primed Quiver" "Penetrating Quiver" "Volant Quiver" "Visceral Quiver" "Broadhead Quiver" "Fire Quiver" "Sacral Quiver" "Two-Point Quiver" "Blunt Quiver"
+
+# Focus
+#---------------------------------------------
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 45
+	Rarity Normal Magic Rare
+	Class == "Foci"
+	BaseType == "Twig Focus" "Woven Focus" "Antler Focus" "Engraved Focus" "Tonal Focus" "Crystal Focus" "Voodoo Focus" "Plumed Focus"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 65
+	Rarity Normal Magic Rare
+	Class == "Foci"
+	BaseType == "Advanced Woven Focus" "Advanced Antler Focus" "Advanced Tonal Focus" "Advanced Crystal Focus" "Advanced Voodoo Focus" "Advanced Plumed Focus" "Expert Antler Focus"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic Rare
+	Class == "Foci"
+	BaseType == "Expert Crystal Focus" "Expert Plumed Focus"
+	SetFontSize 40
+
+Hide
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic
+	Class == "Foci"
+	BaseType == "Expert Crystal Focus" "Expert Plumed Focus" "Advanced Woven Focus" "Advanced Antler Focus" "Advanced Tonal Focus" "Advanced Crystal Focus" "Advanced Voodoo Focus" "Advanced Plumed Focus" "Expert Antler Focus" "Twig Focus" "Woven Focus" "Antler Focus" "Engraved Focus" "Tonal Focus" "Crystal Focus" "Voodoo Focus" "Plumed Focus"
+
+
+#----------------------------------------------------------------------------------------------
+# Tiered Armour Bases
+#----------------------------------------------------------------------------------------------
+Show
+	Mirrored False
+	Corrupted False
+	DropLevel >= 75
+	Rarity Magic Rare
+	Class == "Shields" "Gloves" "Boots" "Body Armours" "Helmets"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 75
+	DropLevel >= 70
+	Rarity Magic Rare
+	Class == "Shields" "Gloves" "Boots" "Body Armours" "Helmets"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 70
+	DropLevel >= 65
+	Rarity Magic Rare
+	Class == "Shields" "Gloves" "Boots" "Body Armours" "Helmets"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 65
+	DropLevel >= 55
+	Rarity Magic Rare
+	Class == "Shields" "Gloves" "Boots" "Body Armours" "Helmets"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 55
+	DropLevel >= 45
+	Rarity Magic Rare
+	Class == "Shields" "Gloves" "Boots" "Body Armours" "Helmets"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 45
+	DropLevel >= 30
+	Rarity Magic Rare
+	Class == "Shields" "Gloves" "Boots" "Body Armours" "Helmets"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 30
+	DropLevel >= 15
+	Rarity Magic Rare
+	Class == "Shields" "Gloves" "Boots" "Body Armours" "Helmets"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 15
+	DropLevel >= 0
+	Rarity Magic Rare
+	Class == "Shields" "Gloves" "Boots" "Body Armours" "Helmets"
+	SetFontSize 40
+
+Hide
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic
+	Class == "Shields" "Gloves" "Boots" "Body Armours" "Helmets"
+
+
+#----------------------------------------------------------------------------------------------
+# Jewellery
+#----------------------------------------------------------------------------------------------
+
+# Rings
+#---------------------------------------------
+Show
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic Rare
+	Class == "Rings"
+	BaseType == "Amethyst Ring" "Pearl Ring" "Prismatic Ring" "Gold Ring" "Breach Ring" #"Ruby Ring" "Sapphire Ring" "Topaz Ring" "Unset Ring"
+	SetFontSize 40
+	SetBackgroundColor 100 100 100 255
+
+Show
+	Mirrored False
+	Corrupted False
+	Rarity Rare
+	Class == "Rings"
+	BaseType == "Iron Ring" "Lazuli Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Emerald Ring" "Unset Ring"
+	SetFontSize 40
+	SetBackgroundColor 100 100 100 255
+
+Hide
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic
+	Class == "Rings"
+	BaseType == "Iron Ring" "Lazuli Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Emerald Ring" "Unset Ring"
+
+
+# Amulets
+#---------------------------------------------
+Show
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic Rare
+	Class == "Amulets"
+	BaseType ==  "Gold Amulet" "Stellar Amulet" "Solar Amulet" #"Amber Amulet" "Jade Amulet" "Lapis Amulet"
+	SetFontSize 40
+	SetBackgroundColor 100 100 100 255
+
+Show
+	Mirrored False
+	Corrupted False
+	Rarity Rare
+	Class == "Amulets"
+	BaseType == "Crimson Amulet" "Azure Amulet" "Lunar Amulet" "Bloodstone Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet"
+	SetFontSize 40
+	SetBackgroundColor 100 100 100 255 
+
+Hide
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic
+	Class == "Amulets"
+	BaseType == "Crimson Amulet" "Azure Amulet" "Lunar Amulet" "Bloodstone Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet"
+
+
+# Belts
+#---------------------------------------------
+Show
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic Rare
+	Class == "Belts"
+	BaseType == "Golden Obi" "Double Belt" "Utility Belt" "Fine Belt"
+	SetFontSize 40
+	SetBackgroundColor 100 100 100 255
+
+Show
+	Mirrored False
+	Corrupted False
+	Rarity Rare
+	Class == "Belts"
+	BaseType == "Rawhide Belt" "Linen Belt" "Wide Belt" "Long Belt" "Plate Belt" "Ornate Belt" "Mail Belt" "Heavy Belt"
+	SetFontSize 40
+	SetBackgroundColor 100 100 100 255
+
+Hide
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic
+	Class == "Belts"
+	BaseType == "Rawhide Belt" "Linen Belt" "Wide Belt" "Long Belt" "Plate Belt" "Ornate Belt" "Mail Belt" "Heavy Belt"
+
+
+#----------------------------------------------------------------------------------------------
+# Tiered Flask Bases
+#----------------------------------------------------------------------------------------------
+
+# Life Flasks
+#---------------------------------------------
+Show
+	ItemLevel < 4
+	Rarity Normal Magic
+	BaseType == "Lesser Life Flask"
+	SetFontSize 32
+
+Show
+	ItemLevel < 10
+	Rarity Normal Magic
+	BaseType == "Medium Life Flask"
+	SetFontSize 32
+
+Show
+	ItemLevel < 16
+	Rarity Normal Magic
+	BaseType == "Greater Life Flask"
+	SetFontSize 32
+
+Show
+	ItemLevel < 23
+	Rarity Normal Magic
+	BaseType == "Grand Life Flask"
+	SetFontSize 32
+
+Show
+	ItemLevel < 30
+	Rarity Normal Magic
+	BaseType == "Giant Life Flask"
+	SetFontSize 32
+
+Show
+	ItemLevel < 40
+	Rarity Normal Magic
+	BaseType == "Colossal Life Flask"
+	SetFontSize 32
+
+Show
+	ItemLevel < 50
+	Rarity Normal Magic
+	BaseType == "Gargantuan Life Flask"
+	SetFontSize 32
+
+Show
+	ItemLevel < 60
+	Rarity Normal Magic
+	BaseType == "Transcendent Life Flask"
+	SetFontSize 32
+
+Show
+	Rarity Normal Magic
+	BaseType == "Ultimate Life Flask"
+	SetFontSize 32
+
+Hide
+	BaseType = "Life Flask"
+
+# Mana Flasks
+#---------------------------------------------
+Show
+	ItemLevel < 4
+	Rarity Normal Magic
+	BaseType == "Lesser Mana Flask"
+	SetFontSize 32
+
+Show
+	ItemLevel < 10
+	Rarity Normal Magic
+	BaseType == "Medium Mana Flask"
+	SetFontSize 32
+
+Show
+	ItemLevel < 16
+	Rarity Normal Magic
+	BaseType == "Greater Mana Flask"
+	SetFontSize 32
+
+Show
+	ItemLevel < 23
+	Rarity Normal Magic
+	BaseType == "Grand Mana Flask"
+	SetFontSize 32
+
+Show
+	ItemLevel < 30
+	Rarity Normal Magic
+	BaseType == "Giant Mana Flask"
+	SetFontSize 32
+
+Show
+	ItemLevel < 40
+	Rarity Normal Magic
+	BaseType == "Colossal Mana Flask"
+	SetFontSize 32
+
+Show
+	ItemLevel < 50
+	Rarity Normal Magic
+	BaseType == "Gargantuan Mana Flask"
+	SetFontSize 32
+
+Show
+	ItemLevel < 60
+	Rarity Normal Magic
+	BaseType == "Transcendent Mana Flask"
+	SetFontSize 32
+
+Show
+	Rarity Normal Magic 
+	BaseType == "Ultimate Mana Flask"
+	SetFontSize 32
+
+Hide
+	BaseType = "Mana Flask"
+
+# Charms
+#---------------------------------------------
+Show
+	Rarity Normal Magic
+	BaseType == "Thawing Charm" "Staunching Charm" "Antidote Charm" "Dousing Charm" "Grounding Charm" "Stone Charm" "Silver Charm" "Amethyst Charm" "Golden Charm"
+	SetFontSize 36
+
+Hide
+	Rarity Normal Magic
+	BaseType == "Ruby Charm" "Sapphire Charm" "Topaz Charm"
+
+
+#----------------------------------------------------------------------------------------------
+# Jewels
+#----------------------------------------------------------------------------------------------
+Show
+	Rarity Normal Magic Rare
+	Class == "Jewels"
+	SetFontSize 40
+	SetBorderColor 0 75 250 255
+	SetBackgroundColor 50 50 50 255
+
+
+#----------------------------------------------------------------------------------------------
+# Corrupted and Mirrored (needs work but this will do for now)
+#----------------------------------------------------------------------------------------------
+Show
+	Corrupted true
+	Rarity Rare
+	Class == "Jewels" "Charms" "Life Flasks" "Mana Flasks" "Rings" "Amulets" "Belts" "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Quivers" "Crossbows" "Quarterstaves" "Two Hand Maces" "Staves" "Bows" "Sceptres" "One Hand Maces" "Wands"
+	SetFontSize 35
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 50 50 50 255
+
+Show
+	Corrupted true
+	Rarity Magic
+	Class == "Jewels" "Charms" "Life Flasks" "Mana Flasks"
+	SetFontSize 35
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 50 50 50 255
+
+Show
+	Mirrored true
+	Rarity Rare
+	Class == "Jewels" "Charms" "Life Flasks" "Mana Flasks" "Rings" "Amulets" "Belts" "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Quivers" "Crossbows" "Quarterstaves" "Two Hand Maces" "Staves" "Bows" "Sceptres" "One Hand Maces" "Wands"
+	SetFontSize 35
+	SetBorderColor 0 75 250 255
+	SetBackgroundColor 50 50 50 255
+
+Show
+	Mirrored true
+	Rarity Magic
+	Class == "Jewels" "Charms" "Life Flasks" "Mana Flasks"
+	SetFontSize 35
+	SetBorderColor 0 75 250 255
+	SetBackgroundColor 50 50 50 255
+
+Hide
+	Corrupted true
+	Rarity Normal Magic
+	Class == "Jewels" "Charms" "Life Flasks" "Mana Flasks" "Rings" "Amulets" "Belts" "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Quivers" "Crossbows" "Quarterstaves" "Two Hand Maces" "Staves" "Bows" "Sceptres" "One Hand Maces" "Wands"
+
+Hide
+	Mirrored true
+	Rarity Normal Magic
+	Class == "Jewels" "Charms" "Life Flasks" "Mana Flasks" "Rings" "Amulets" "Belts" "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Quivers" "Crossbows" "Quarterstaves" "Two Hand Maces" "Staves" "Bows" "Sceptres" "One Hand Maces" "Wands"
+
+
+#----------------------------------------------------------------------------------------------
+# Salvage Items Part 2 
+#----------------------------------------------------------------------------------------------
+# Compact Rares for Regal shards
+Show
+	Width <= 1
+	Rarity Rare
+	SetFontSize 28
+	SetBackgroundColor 50 50 50 255
+
+Show
+	Height <= 2
+	Width <= 2
+	Rarity Rare
+	SetFontSize 28
+	SetBackgroundColor 50 50 50 255
+
+Show
+	Rarity Rare
+	SetFontSize 28
+	SetBackgroundColor 0 0 0 255
+
+
+#----------------------------------------------------------------------------------------------
+# Catch-All
+# If you see pink items, let me know and I'll add them here appropriately
+#----------------------------------------------------------------------------------------------
+
+Show
+	SetFontSize 45
+	SetTextColor 255 0 255 255
+	SetBorderColor 255 0 255 255
+	SetBackgroundColor 100 0 100 255
+	PlayAlertSound 12 300
+	PlayEffect Orange
+	MinimapIcon 0 Pink Circle
+	DisableDropSound true
+
+
+
