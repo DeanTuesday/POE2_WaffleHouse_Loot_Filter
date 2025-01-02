@@ -1214,6 +1214,14 @@ Show
 Show
 	Mirrored False
 	Corrupted False
+	DropLevel >= 70
+	Rarity Magic Rare
+	Class == "Body Armours"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
 	ItemLevel < 75
 	DropLevel >= 70
 	Rarity Magic Rare
