@@ -1247,7 +1247,7 @@ Show
 	Corrupted False
 	DropLevel >= 75
 	Rarity Rare
-	Class == "Shields" "Gloves" "Boots" "Body Armours" "Helmets"
+	Class == "Shields" "Bucklers" "Gloves" "Boots" "Body Armours" "Helmets"
 	SetFontSize 40
 
 Show
@@ -1264,7 +1264,7 @@ Show
 	ItemLevel < 75
 	DropLevel >= 70
 	Rarity Rare
-	Class == "Shields" "Gloves" "Boots" "Body Armours" "Helmets"
+	Class == "Shields" "Bucklers" "Gloves" "Boots" "Body Armours" "Helmets"
 	SetFontSize 40
 
 Show
@@ -1273,7 +1273,7 @@ Show
 	ItemLevel < 70
 	DropLevel >= 65
 	Rarity Magic Rare
-	Class == "Shields" "Gloves" "Boots" "Body Armours" "Helmets"
+	Class == "Shields" "Bucklers" "Gloves" "Boots" "Body Armours" "Helmets"
 	SetFontSize 40
 
 Show
@@ -1282,7 +1282,7 @@ Show
 	ItemLevel < 65
 	DropLevel >= 55
 	Rarity Magic Rare
-	Class == "Shields" "Gloves" "Boots" "Body Armours" "Helmets"
+	Class == "Shields" "Bucklers" "Gloves" "Boots" "Body Armours" "Helmets"
 	SetFontSize 40
 
 Show
@@ -1291,7 +1291,7 @@ Show
 	ItemLevel < 55
 	DropLevel >= 45
 	Rarity Magic Rare
-	Class == "Shields" "Gloves" "Boots" "Body Armours" "Helmets"
+	Class == "Shields" "Bucklers" "Gloves" "Boots" "Body Armours" "Helmets"
 	SetFontSize 40
 
 Show
@@ -1300,7 +1300,7 @@ Show
 	ItemLevel < 45
 	DropLevel >= 30
 	Rarity Magic Rare
-	Class == "Shields" "Gloves" "Boots" "Body Armours" "Helmets"
+	Class == "Shields" "Bucklers" "Gloves" "Boots" "Body Armours" "Helmets"
 	SetFontSize 40
 
 Show
@@ -1309,7 +1309,7 @@ Show
 	ItemLevel < 30
 	DropLevel >= 15
 	Rarity Magic Rare
-	Class == "Shields" "Gloves" "Boots" "Body Armours" "Helmets"
+	Class == "Shields" "Bucklers" "Gloves" "Boots" "Body Armours" "Helmets"
 	SetFontSize 40
 
 Show
@@ -1318,14 +1318,14 @@ Show
 	ItemLevel < 15
 	DropLevel >= 0
 	Rarity Magic Rare
-	Class == "Shields" "Gloves" "Boots" "Body Armours" "Helmets"
+	Class == "Shields" "Bucklers" "Gloves" "Boots" "Body Armours" "Helmets"
 	SetFontSize 40
 
 Hide
 	Mirrored False
 	Corrupted False
 	Rarity Normal Magic
-	Class == "Shields" "Gloves" "Boots" "Body Armours" "Helmets"
+	Class == "Shields" "Bucklers" "Gloves" "Boots" "Body Armours" "Helmets"
 
 
 #----------------------------------------------------------------------------------------------
