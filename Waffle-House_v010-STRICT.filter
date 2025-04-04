@@ -640,7 +640,7 @@ Show
 	Mirrored False
 	Corrupted False
 	Rarity Normal
-	BaseType == "Heavy Belt" "Stellar Amulet"
+	BaseType == "Stellar Amulet"
 	SetFontSize 40
 	SetBorderColor 175 96 37 255
 	SetBackgroundColor 0 0 0 255
@@ -774,7 +774,7 @@ Show
 	ItemLevel < 55
 	Rarity Normal Magic Rare
 	Class == "One Hand Maces"
-	BaseType == "Morning Star" "Jade Club" "Lumen Mace" "Advanced Smithing Hammer" "Advanced Slim Mace"
+	BaseType == "Morning Star" "Jade Club" "Lumen Mace" "Calescent Hammer" "Flared Mace" "Battle Pick"
 	SetFontSize 40
 
 Show
@@ -783,7 +783,7 @@ Show
 	ItemLevel < 67
 	Rarity Normal Magic Rare
 	Class == "One Hand Maces"
-	BaseType == "Execratus Hammer" "Torment Club" "Advanced Warpick" "Advanced Plated Mace" "Advanced Brigand Mace" "Advanced Construct Hammer"
+	BaseType == "Execratus Hammer" "Torment Club" "Marching Mace" "Bandit Mace" "Structured Hammer"
 	SetFontSize 40
 
 Show
@@ -791,7 +791,7 @@ Show
 	Corrupted False
 	Rarity Rare
 	Class == "One Hand Maces"
-	BaseType == "Expert Slim Mace" "Expert Plated Mace" "Expert Smithing Hammer" "Expert Warpick" "Expert Construct Hammer" "Expert Brigand Mace"
+	BaseType == "Flanged Mace" "Crown Mace" "Molten Hammer" "Strife Pick" "Fortified Hammer" "Marauding Mace"
 	SetFontSize 40
 
 Hide
@@ -799,7 +799,7 @@ Hide
 	Corrupted False
 	Rarity Normal Magic
 	Class == "One Hand Maces"
-	BaseType == "Expert Slim Mace" "Expert Plated Mace" "Expert Smithing Hammer" "Expert Warpick" "Expert Construct Hammer" "Expert Brigand Mace" "Execratus Hammer" "Torment Club" "Advanced Warpick" "Advanced Plated Mace" "Advanced Brigand Mace" "Advanced Construct Hammer" "Morning Star" "Jade Club" "Lumen Mace" "Advanced Smithing Hammer" "Advanced Slim Mace" "Warpick" "Plated Mace" "Brigand Mace" "Construct Hammer" "Smithing Hammer" "Spiked Club" "Slim Mace" "Wooden Club"
+	BaseType == "Wooden Club" "Smithing Hammer" "Spiked Club" "Slim Mace" "Warpick" "Plated Mace" "Brigand Mace" "Construct Hammer" "Morning Star" "Jade Club" "Lumen Mace" "Calescent Hammer" "Flared Mace" "Battle Pick" "Execratus Hammer" "Torment Club" "Marching Mace" "Bandit Mace" "Structured Hammer" "Flanged Mace" "Crown Mace" "Molten Hammer" "Strife Pick" "Fortified Hammer" "Marauding Mace"
 
 # Sceptre
 #---------------------------------------------
@@ -821,7 +821,74 @@ Hide
 
 # Spear
 #---------------------------------------------
-# not in game
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 11
+	Rarity Normal Magic Rare
+	Class == "Spears"
+	BaseType == "Hardwood Spear" "Ironhead Spear"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 22
+	Rarity Normal Magic Rare
+	Class == "Spears"
+	BaseType == "Hunting Spear" "Winged Spear"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 33
+	Rarity Normal Magic Rare
+	Class == "Spears"
+	BaseType == "War Spear" "Forked Spear"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 45
+	Rarity Normal Magic Rare
+	Class == "Spears"
+	BaseType == "Barbed Spear" "Broad Spear"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 55
+	Rarity Normal Magic Rare
+	Class == "Spears"
+	BaseType == "Crossblade Spear" "Seaglass Spear" "Sword Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	ItemLevel < 67
+	Rarity Normal Magic Rare
+	Class == "Spears"
+	BaseType == "Branched Spear" "Jagged Spear" "Massive Spear" "Sword Spear" "Striking Spear" "Helix Spear"
+	SetFontSize 40
+
+Show
+	Mirrored False
+	Corrupted False
+	Rarity Rare
+	Class == "Spears"
+	BaseType == "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
+	SetFontSize 40
+
+Hide
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic
+	Class == "Spears"
+	BaseType == "Hardwood Spear" "Ironhead Spear" "Hunting Spear" "Winged Spear" "War Spear" "Forked Spear" "Barbed Spear" "Broad Spear" "Crossblade Spear" "Seaglass Spear" "Sword Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Sword Spear" "Striking Spear" "Helix Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
 
 # Flail
 #---------------------------------------------
@@ -862,7 +929,7 @@ Show
 	ItemLevel < 50
 	Rarity Normal Magic Rare
 	Class == "Bows"
-	BaseType == "Zealot Bow" "Artillery Bow"
+	BaseType == "Zealot Bow" "Artillery Bow" "Snakewood Shortbow" "Protector Bow" 
 	SetFontSize 40
 
 Show
@@ -871,7 +938,7 @@ Show
 	ItemLevel < 67
 	Rarity Normal Magic Rare
 	Class == "Bows"
-	BaseType == "Tribal Bow" "Greatbow" "Advanced Shortbow" "Double Limb Bow" "Advanced Composite Bow" "Advanced Warden Bow" "Advanced Dualstring Bow" "Advanced Cultist Bow" "Advanced Zealot Bow" "Heavy Bow"
+	BaseType == "Tribal Bow" "Greatbow" "Double Limb Bow" "Heavy Bow" "Rider Bow" "Twin Bow" "Adherent Bow" "Militant Bow"
 	SetFontSize 40
 
 Show
@@ -879,7 +946,7 @@ Show
 	Corrupted False
 	Rarity Rare
 	Class == "Bows"
-	BaseType == "Expert Shortbow" "Expert Composite Bow" "Expert Warden Bow" "Expert Dualstring Bow" "Expert Cultist Bow" "Expert Zealot Bow"
+	BaseType == "Ironwood Shortbow" "Cavalry Bow" "Guardian Bow" "Gemini Bow" "Fanatic Bow" "Warmonger Bow"
 	SetFontSize 40
 
 Hide
@@ -887,7 +954,7 @@ Hide
 	Corrupted False
 	Rarity Normal Magic
 	Class == "Bows"
-	BaseType == "Expert Shortbow" "Expert Composite Bow" "Expert Warden Bow" "Expert Dualstring Bow" "Expert Cultist Bow" "Expert Zealot Bow" "Tribal Bow" "Greatbow" "Advanced Shortbow" "Double Limb Bow" "Advanced Composite Bow" "Advanced Warden Bow" "Advanced Dualstring Bow" "Advanced Cultist Bow" "Advanced Zealot Bow" "Heavy Bow" "Zealot Bow" "Artillery Bow" "Composite Bow" "Dualstring Bow" "Cultist Bow" "Shortbow" "Warden Bow" "Recurve Bow" "Crude Bow"
+	BaseType == "Crude Bow" "Shortbow" "Warden Bow" "Recurve Bow" "Composite Bow" "Dualstring Bow" "Cultist Bow" "Zealot Bow" "Artillery Bow" "Snakewood Shortbow" "Protector Bow" "Tribal Bow" "Greatbow" "Double Limb Bow" "Heavy Bow" "Rider Bow" "Twin Bow" "Adherent Bow" "Militant Bow" "Ironwood Shortbow" "Cavalry Bow" "Guardian Bow" "Gemini Bow" "Fanatic Bow" "Warmonger Bow"
 
 
 # Staves
@@ -951,7 +1018,7 @@ Show
 	ItemLevel < 55
 	Rarity Normal Magic Rare
 	Class == "Two Hand Maces"
-	BaseType == "Pointed Maul" "Totemic Greatclub" "Greatmace" "Advanced Oak Greathammer" "Advanced Forge Maul"
+	BaseType == "Pointed Maul" "Totemic Greatclub" "Greatmace" "Snakewood Greathammer" "Blacksmith Maul" "Zealot Greathammer"
 	SetFontSize 40
 
 Show
@@ -960,16 +1027,7 @@ Show
 	ItemLevel < 67
 	Rarity Normal Magic Rare
 	Class == "Two Hand Maces"
-	BaseType == "Precise Greathammer" "Advanced Cultist Greathammer" "Advanced Temple Maul" "Advanced Leaden Greathammer" "Advanced Crumbling Maul"
-	SetFontSize 40
-
-Show
-	Mirrored False
-	Corrupted False
-	ItemLevel < 77
-	Rarity Rare
-	Class == "Two Hand Maces"
-	BaseType == "Giant Maul" "Expert Forge Maul"
+	BaseType == "Precise Greathammer" "Giant Maul" "Solemn Maul" "Heavy Greathammer" "Disintegrating Maul"
 	SetFontSize 40
 
 Show
@@ -977,7 +1035,7 @@ Show
 	Corrupted False
 	Rarity Rare
 	Class == "Two Hand Maces"
-	BaseType == "Expert Temple Maul" "Expert Oak Greathammer" "Expert Cultist Greathammer" "Expert Crumbling Maul" "Expert Leaden Greathammer"
+	BaseType == "Anvil Maul" "Sacred Maul" "Ironwood Greathammer" "Fanatic Greathammer" "Ruination Maul" "Massive Greathammer"
 	SetFontSize 40
 
 Hide
@@ -985,7 +1043,7 @@ Hide
 	Corrupted False
 	Rarity Normal Magic
 	Class == "Two Hand Maces"
-	BaseType == "Expert Temple Maul" "Expert Oak Greathammer" "Expert Cultist Greathammer" "Expert Crumbling Maul" "Expert Leaden Greathammer" "Giant Maul" "Expert Forge Maul" "Precise Greathammer" "Advanced Cultist Greathammer" "Advanced Temple Maul" "Advanced Leaden Greathammer" "Advanced Crumbling Maul" "Pointed Maul" "Totemic Greatclub" "Greatmace" "Advanced Oak Greathammer" "Advanced Forge Maul" "Cultist Greathammer" "Temple Maul" "Leaden Greathammer" "Crumbling Maul" "Oak Greathammer" "Forge Maul" "Studded Greatclub" "Felled Greatclub"
+	BaseType == "Felled Greatclub" "Oak Greathammer" "Forge Maul" "Studded Greatclub" "Cultist Greathammer" "Temple Maul" "Leaden Greathammer" "Crumbling Maul" "Pointed Maul" "Totemic Greatclub" "Greatmace" "Snakewood Greathammer" "Blacksmith Maul" "Zealot Greathammer" "Precise Greathammer" "Giant Maul" "Solemn Maul" "Heavy Greathammer" "Disintegrating Maul" "Anvil Maul" "Sacred Maul" "Ironwood Greathammer" "Fanatic Greathammer" "Ruination Maul" "Massive Greathammer"
 
 # Quarterstaff
 #---------------------------------------------
@@ -1022,7 +1080,7 @@ Show
 	ItemLevel < 56
 	Rarity Normal Magic Rare
 	Class == "Quarterstaves"
-	BaseType == "Hefty Quarterstaff" "Smooth Quarterstaff" "Anima Quarterstaff" "Advanced Long Quarterstaff" "Advanced Gothic Quarterstaff"
+	BaseType == "Hefty Quarterstaff" "Smooth Quarterstaff" "Anima Quarterstaff" "Reaching Quarterstaff" "Barbarous Quarterstaff" "Arcing Quarterstaff"
 	SetFontSize 40
 
 Show
@@ -1031,16 +1089,7 @@ Show
 	ItemLevel < 67
 	Rarity Normal Magic Rare
 	Class == "Quarterstaves"
-	BaseType == "Advanced Crackling Quarterstaff" "Advanced Crescent Quarterstaff" "Advanced Slicing Quarterstaff" "Advanced Barrier Quarterstaff" "Graceful Quarterstaff"
-	SetFontSize 40
-
-Show
-	Mirrored False
-	Corrupted False
-	ItemLevel < 77
-	Rarity Rare
-	Class == "Quarterstaves"
-	BaseType == "Wyrm Quarterstaff" "Expert Gothic Quarterstaff"
+	BaseType == "Graceful Quarterstaff" "Wyrm Quarterstaff" "Waxing Quarterstaff" "Bladed Quarterstaff" "Guardian Quarterstaff"
 	SetFontSize 40
 
 Show
@@ -1048,7 +1097,7 @@ Show
 	Corrupted False
 	Rarity Rare
 	Class == "Quarterstaves"
-	BaseType == "Expert Crescent Quarterstaff" "Expert Long Quarterstaff" "Expert Crackling Quarterstaff" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff"
+	BaseType == "Sinister Quarterstaff" "Lunar Quarterstaff" "Striking Quarterstaff" "Bolting Quarterstaff" "Aegis Quarterstaff" "Razor Quarterstaff"
 	SetFontSize 40
 
 Hide
@@ -1056,7 +1105,7 @@ Hide
 	Corrupted False
 	Rarity Normal Magic
 	Class == "Quarterstaves"
-	BaseType == "Expert Crescent Quarterstaff" "Expert Long Quarterstaff" "Expert Crackling Quarterstaff" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Wyrm Quarterstaff" "Expert Gothic Quarterstaff" "Advanced Crackling Quarterstaff" "Advanced Crescent Quarterstaff" "Advanced Slicing Quarterstaff" "Advanced Barrier Quarterstaff" "Graceful Quarterstaff" "Hefty Quarterstaff" "Smooth Quarterstaff" "Anima Quarterstaff" "Advanced Long Quarterstaff" "Advanced Gothic Quarterstaff" "Steelpoint Quarterstaff" "Slicing Quarterstaff" "Barrier Quarterstaff" "Long Quarterstaff" "Gothic Quarterstaff" "Crackling Quarterstaff" "Crescent Quarterstaff" "Wrapped Quarterstaff"
+	BaseType == "Wrapped Quarterstaff" "Long Quarterstaff" "Gothic Quarterstaff" "Crackling Quarterstaff" "Crescent Quarterstaff" "Steelpoint Quarterstaff" "Slicing Quarterstaff" "Barrier Quarterstaff" "Hefty Quarterstaff" "Smooth Quarterstaff" "Anima Quarterstaff" "Reaching Quarterstaff" "Barbarous Quarterstaff" "Arcing Quarterstaff" "Graceful Quarterstaff" "Wyrm Quarterstaff" "Waxing Quarterstaff" "Bladed Quarterstaff" "Guardian Quarterstaff" "Sinister Quarterstaff" "Lunar Quarterstaff" "Striking Quarterstaff" "Bolting Quarterstaff" "Aegis Quarterstaff" "Razor Quarterstaff"
 
 # Crossbow
 #---------------------------------------------
@@ -1093,7 +1142,7 @@ Show
 	ItemLevel < 56
 	Rarity Normal Magic Rare
 	Class == "Crossbows"
-	BaseType == "Blackfire Crossbow" "Piercing Crossbow" "Cumbrous Crossbow" "Advanced Tense Crossbow" "Advanced Sturdy Crossbow" "Advanced Varnished Crossbow"
+	BaseType == "Blackfire Crossbow" "Piercing Crossbow" "Cumbrous Crossbow" "Taut Crossbow" "Robust Crossbow" "Painted Crossbow"
 	SetFontSize 40
 
 Show
@@ -1102,16 +1151,7 @@ Show
 	ItemLevel < 67
 	Rarity Normal Magic Rare
 	Class == "Crossbows"
-	BaseType == "Dedalian Crossbow" "Advanced Dyad Crossbow" "Advanced Bombard Crossbow" "Advanced Forlorn Crossbow"
-	SetFontSize 40
-
-Show
-	Mirrored False
-	Corrupted False
-	ItemLevel < 77
-	Rarity Rare
-	Class == "Crossbows"
-	BaseType == "Esoteric Crossbow" "Expert Sturdy Crossbow" "Expert Varnished Crossbow"
+	BaseType == "Dedalian Crossbow" "Esoteric Crossbow" "Twin Crossbow" "Cannonade Crossbow" "Bleak Crossbow"
 	SetFontSize 40
 
 Show
@@ -1119,7 +1159,7 @@ Show
 	Corrupted False
 	Rarity Rare
 	Class == "Crossbows"
-	BaseType == "Expert Tense Crossbow" "Expert Dyad Crossbow" "Expert Bombard Crossbow" "Expert Forlorn Crossbow"
+	BaseType == "Stout Crossbow" "Engraved Crossbow" "Flexed Crossbow" "Gemini Crossbow" "Siege Crossbow" "Desolate Crossbow"
 	SetFontSize 40
 
 Hide
@@ -1127,7 +1167,7 @@ Hide
 	Corrupted False
 	Rarity Normal Magic
 	Class == "Crossbows"
-	BaseType == "Expert Tense Crossbow" "Expert Dyad Crossbow" "Expert Bombard Crossbow" "Expert Forlorn Crossbow" "Esoteric Crossbow" "Expert Sturdy Crossbow" "Expert Varnished Crossbow" "Dedalian Crossbow" "Advanced Dyad Crossbow" "Advanced Bombard Crossbow" "Advanced Forlorn Crossbow" "Blackfire Crossbow" "Piercing Crossbow" "Cumbrous Crossbow" "Advanced Tense Crossbow" "Advanced Sturdy Crossbow" "Advanced Varnished Crossbow" "Alloy Crossbow" "Bombard Crossbow" "Construct Crossbow" "Tense Crossbow" "Sturdy Crossbow" "Varnished Crossbow" "Dyad Crossbow" "Makeshift Crossbow"
+	BaseType == "Makeshift Crossbow" "Tense Crossbow" "Sturdy Crossbow" "Varnished Crossbow" "Dyad Crossbow" "Alloy Crossbow" "Bombard Crossbow" "Construct Crossbow" "Blackfire Crossbow" "Piercing Crossbow" "Cumbrous Crossbow" "Taut Crossbow" "Robust Crossbow" "Painted Crossbow" "Dedalian Crossbow" "Esoteric Crossbow" "Twin Crossbow" "Cannonade Crossbow" "Bleak Crossbow" "Stout Crossbow" "Engraved Crossbow" "Flexed Crossbow" "Gemini Crossbow" "Siege Crossbow" "Desolate Crossbow"
 
 # Trap
 #---------------------------------------------
@@ -1180,7 +1220,7 @@ Show
 	ItemLevel < 65
 	Rarity Normal Magic Rare
 	Class == "Foci"
-	BaseType == "Advanced Woven Focus" "Advanced Antler Focus" "Advanced Tonal Focus" "Advanced Crystal Focus" "Advanced Voodoo Focus" "Advanced Plumed Focus" "Expert Antler Focus"
+	BaseType == "Jade Focus" "Paua Focus" "Elegant Focus" "Attuned Focus" "Magus Focus" "Wreath Focus" "Staghorn Focus" "Jingling Focus" "Arrayed Focus" "Cultist Focus"
 	SetFontSize 40
 
 Show
@@ -1188,7 +1228,7 @@ Show
 	Corrupted False
 	Rarity Rare
 	Class == "Foci"
-	BaseType == "Expert Crystal Focus" "Expert Plumed Focus"
+	BaseType == "Hallowed Focus" "Druidic Focus" "Leyline Focus" "Sacred Focus"
 	SetFontSize 40
 
 Hide
@@ -1196,7 +1236,7 @@ Hide
 	Corrupted False
 	Rarity Normal Magic
 	Class == "Foci"
-	BaseType == "Expert Crystal Focus" "Expert Plumed Focus" "Advanced Woven Focus" "Advanced Antler Focus" "Advanced Tonal Focus" "Advanced Crystal Focus" "Advanced Voodoo Focus" "Advanced Plumed Focus" "Expert Antler Focus" "Twig Focus" "Woven Focus" "Antler Focus" "Engraved Focus" "Tonal Focus" "Crystal Focus" "Voodoo Focus" "Plumed Focus"
+	BaseType == "Twig Focus" "Woven Focus" "Antler Focus" "Engraved Focus" "Tonal Focus" "Crystal Focus" "Voodoo Focus" "Plumed Focus" "Jade Focus" "Paua Focus" "Elegant Focus" "Attuned Focus" "Magus Focus" "Wreath Focus" "Staghorn Focus" "Jingling Focus" "Arrayed Focus" "Cultist Focus" "Hallowed Focus" "Druidic Focus" "Leyline Focus" "Sacred Focus"
 
 
 #----------------------------------------------------------------------------------------------
